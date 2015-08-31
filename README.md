@@ -1,6 +1,8 @@
 # MediaHarbor
 CS497 Personal Project
 
+## 1 Project Proposal
+
 **(a) Project title?** For example: “Search Engine using Apache Lucene”, or “High- Performance Web Framework using Dart”.
  		
 		 Media Harbor: An Online Media Storage Platform Built with Ruby on Rails
@@ -38,3 +40,9 @@ CS497 Personal Project
 	satisfaction.
 		
 		Provide basic in-app editiing of user uploaded documents.
+
+## 2 Category Requirements
+
+**(a) Is it a website?**
+
+	My project best falls under the category of a website and will be hosted publicly.
