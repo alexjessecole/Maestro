@@ -37,4 +37,4 @@ CS497 Personal Project
 	What additional gold plating would make your application utterly awesome? Stretch goals aren’t part of your grade, but your own 
 	satisfaction.
 		
-		Stretch Goal: Provide basic in-app editiing of user uploaded documents.
+		Provide basic in-app editiing of user uploaded documents.
