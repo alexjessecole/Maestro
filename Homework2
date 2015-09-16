@@ -1,0 +1,23 @@
+Oct 08, what new functionality or technical hurdle will you have complete?
+
+		1. "Landing" page fully functional and styled.
+		2. "Sign Up" and "Login" pages fully functional and styled.
+		3. Brand established including url, logo, and banner.
+		4. Account creation/access assisted using omniauth: facebook credentials.
+		
+Oct 22, what new functionality or technical hurdle will you have complete?
+
+		1. Integrate subsciption plan activation process into the account creation process (Stripe Processing).
+		2. "Account Management" page implemented with ability alter subscription plan.
+		
+Nov 12, what new functionality or technical hurdle will you have complete?
+
+		1. "Media Dashboard" Page styled and functional with ability to upload images.
+		2. "Media Dashboard" page styled and functional with ability to upload songs.
+		
+Dec 03, what new functionality or technical hurdle will you have complete? By this point, your project should meet your initial requirements.
+
+		1. "Media Dashboard" page will have ability to upload videos.
+		2. "Media Dashboard" page will have ability to upload documents.
+		3. Display metrics on the "Account Management" page showing currently used storage out of subscription allotted storage.
+		4. Polishing and final style updates.

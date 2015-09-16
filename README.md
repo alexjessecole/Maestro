@@ -46,3 +46,10 @@ CS497 Personal Project
 **(a) Is it a website?**
 
 	My project best falls under the category of a website and will be hosted publicly.
+	
+##  COLOR SCHEME
+
+	F9690E Light Orange
+	ED5C0C Dark Orange
+	BDC3C7 Light Grey
+	A6AEB2 Dark Grey
