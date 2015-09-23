@@ -1,0 +1,45 @@
+// Place all the styles related to the registrations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.input-field {
+  -webkit-appearance: none;
+  -webkit-box-shadow: 2px 2px 5px #888888; 
+  -moz-box-shadow: 2px 2px 5px #888888;
+  box-shadow: 2px 2px 5px #888888;
+  margin-top: 1%;
+  padding: 3px;
+  border: solid 3px #FFF;
+  border-radius: 6px;
+  background-color: #FFF !important;
+  color: #26A65B;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.background {
+	background-color: #26A65B;
+}
+
+.text-white {
+  color: #fff !important;
+  font-family: arial !important;
+  text-decoration: none !important;
+  font-size: 12px !important;
+}
+
+.text-white-large {
+  color: #fff !important;
+  font-family: arial !important;
+  text-decoration: none !important;
+  font-size: 16px !important;
+}
+
+.position-right {
+float: right;
+}
+
+.position-left {
+float: left;
+}

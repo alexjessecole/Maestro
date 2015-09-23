@@ -1,0 +1,104 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#pins {
+	margin: 0 auto;
+}
+
+.box {
+width: 100%;
+}
+
+hr {
+  margin-top: 0px;
+  padding: 0;
+  border: none;
+  border-top: 9px solid #26A65B;
+  color: #26A65B;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 2px 2px 5px #888888; 
+  -moz-box-shadow: 2px 2px 5px #888888;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+hr.gray-shadow {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+
+.pin-show-username {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: #26A65B;
+  margin-bottom: 0px;
+}
+
+.pin-show-description {
+  margin-top: -10px; 
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.current-user-links {
+  margin-top: 5px; 
+  padding-left: 10px;
+}
+
+.pin-image {
+  width: 100%;
+  height: auto;
+}
+
+.over-image
+{
+    position:relative;
+    top: 10px;
+    right:5px;
+    text-align:right;
+    display:block;
+    font-size: 25px;
+    color: #26A65B;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.over-image-tally
+{
+    position:relative;
+    top: -40px;
+    right:25px;
+    text-align:right;
+    display:block;
+    font-size: 50px;
+}
+
+.new-post-input-field {
+  border: solid 1px #26A65B;
+  color: #26A65B;
+}
+
+.new-post-form-text{
+  color: #26A65B;
+  text-decoration: none !important;
+  font-family: arial;
+}
+
+.back-arrow {
+  color: #26A65B;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
+.back-arrow-text {
+   position: absolute;
+  top: 81px;
+  left: 52px;
+}

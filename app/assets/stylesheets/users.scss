@@ -1,0 +1,55 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.modal-dialog {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin:0;
+      background-color: #26A65B;
+
+}
+
+.modal-content {   
+      height: 100%;
+      border-radius: 0;
+      color:blue;
+      overflow:auto;
+      background-color: #26A65B;
+}
+
+.container
+{
+   position: relative;
+   width:90%;
+   top: 30% !important;
+}
+#left, #right
+{
+    max-height:100% !important;
+    width:48%;
+    float:left;
+}
+#right {float:right;}
+
+
+.column{
+    max-height: 100% !important;
+    width: 100%;
+    float: left;
+}
+
+#space{
+    width: 10px;
+}
+
+#column1{
+    background-color: #26A65B;
+}
+
+#column2{
+    background-color:#26A65B;
+}
+
+

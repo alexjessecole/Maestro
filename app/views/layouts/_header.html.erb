@@ -1,0 +1,39 @@
+
+<div class="mobilenav" style="margin-top: 40px;">
+    <div class="col-xs-6"> 
+      <li ><%= link_to raw('<span class="glyphicon glyphicon-heart glyph-white"></span> <br/>Favorites'), root_path, class: "link-text" %></li> 
+      <li><%= link_to raw('<span class="glyphicon glyphicon-camera glyph-white"></span> <br/>Photographer Images'), new_user_session_path, class: "link-text" %></li> 
+      <li><%= link_to raw('<span class="glyphicon glyphicon-envelope glyph-white"></span> <br/>Invite Friends'), destroy_user_session_path, class: "link-text" %></li> 
+      </div>
+      <div class="col-xs-6">
+      <li><%= link_to raw('<span class="glyphicon glyphicon-user glyph-white"></span> <br/>Guest Images'), pins_path, class: "link-text" %></li> 
+      <li><%= link_to raw('<span class="glyphicon glyphicon-circle-arrow-up glyph-white"></span> <br/>Upload Images'), new_pin_path, class: "link-text" %></li> 
+      <li data-no-turbolink><%= link_to raw('<span class="glyphicon glyphicon-off glyph-white"></span> <br/>Log Out'),destroy_user_session_path, class: "link-text"%></li> 
+    </div>
+</div> 
+
+
+ 
+<nav class="background header-container">
+    <%= image_tag "Maestro_Logo_Small.png", class:"header-logo"%>
+
+    <% if params[:action] == 'index' %>
+      <h3 class="header-text">Guest Images</h3>
+      <%end%>
+    <% if params[:action] == 'show' %>
+        <h3 class="header-text"></h3>
+    <% end %>
+      <% if params[:action] == 'new' %>
+        <h3 class="header-text">Upload Images</h3>
+    <% end %>
+      <% if params[:action] == 'favorites' %>
+      <h3 class="header-text">Favorites</h3>
+       <% end %>
+</nav>
+    <a href="javascript:void(0)" class="icon"> 
+       <div class="hamburger"> 
+         <div class="menui top-menu"></div> 
+         <div class="menui mid-menu"></div> 
+         <div class="menui bottom-menu"></div> 
+       </div> 
+    </a>

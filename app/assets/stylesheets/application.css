@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+.flash {
+	color: #26A65B;
+    margin-top: 45px;
+ 	margin-bottom: 18px;
+	border: solid 3px #FFF;
+	background-color: #FFF !important;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 2px 2px 5px #888888; 
+    -moz-box-shadow: 2px 2px 5px #888888;
+    box-shadow: 2px 2px 5px #888888;
+    width: 100% !important;
+    font-size: 17px;
+    text-align: center;
+   
+}
+/* Haeder Nav Bar Styling*/
+
+.header-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    margin-top: 0px;
+    font-family: arial;
+    text-decoration: none;
+}
+
+.header-logo{
+    position:absolute; 
+    right:0px; 
+    margin-top: 5px; 
+    margin-right: 5px;
+}
+
+.header-container{
+    z-index: 150;
+    height: 45px;
+    position: fixed;
+    top:0;
+    width: 100%;
+  
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+
+

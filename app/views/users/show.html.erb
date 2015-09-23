@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+<script src="hamburgler.js"> </script> 
+<link rel="stylesheet" href="hamburgler.css">
+</head>
+<!-- THIS IS THE MENU --> 
+<div class="mobilenav">
+<div class="col-xs-6"> 
+  <li><%= link_to raw('<span class="glyphicon glyphicon-heart glyph-white"></span> <br/>Favorites'), new_user_session_path, class: "text-white" %></li> 
+  <li><%= link_to raw('<span class="glyphicon glyphicon-camera glyph-white"></span> <br/>Photographer Images'), new_user_session_path, class: "text-white" %></li> 
+  <li><%= link_to raw('<span class="glyphicon glyphicon-envelope glyph-white"></span> <br/>Invite Friends'), destroy_user_session_path, class: "text-white" %></li> 
+  </div>
+  <div class="col-xs-6">
+  <li><%= link_to raw('<span class="glyphicon glyphicon-user glyph-white"></span> <br/>Guest Images'), new_user_session_path, class: "text-white" %></li> 
+  <li><%= link_to raw('<span class="glyphicon glyphicon-circle-arrow-up glyph-white"></span> <br/>Upload Images'), new_user_session_path, class: "text-white" %></li> 
+  <li><%= link_to raw('<span class="glyphicon glyphicon-off glyph-white"></span> <br/>  Log Out'),destroy_user_session_path, method: :delete, class: "text-white"%></li> 
+
+</div>
+</div> 
+
+<!-- THIS IS THE ICON --> 
+
+<a href="javascript:void(0)" class="icon"> 
+   <div class="hamburger"> 
+     <div class="menui top-menu"></div> 
+     <div class="menui mid-menu"></div> 
+     <div class="menui bottom-menu"></div> 
+   </div> 
+</a>
+
+<body class="background">
+
+
+</body>

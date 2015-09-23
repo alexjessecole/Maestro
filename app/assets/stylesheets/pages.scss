@@ -1,0 +1,36 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* ********************************************************************
+**                        Rails Links                                **
+**********************************************************************/
+a {
+color: #26A65B !important;	/*A links or ruby link_to*/
+}
+
+a:hover {
+color: #CCC !important;	/*A links or ruby link_to*/
+text-decoration: none;
+}
+
+
+
+.background {
+	background-color: #5;
+}
+
+.landing-button {
+  -webkit-appearance: none;
+  -webkit-box-shadow: 2px 2px 5px #888888; 
+  -moz-box-shadow: 2px 2px 5px #888888;
+  box-shadow: 2px 2px 5px #888888;
+  margin-top: 1%;
+  padding: 3px;
+  border: solid 3px #FFF;
+  border-radius: 6px;
+  background-color: #FFF !important;
+  color: #26A65B;
+  font-size: 19px;
+  text-decoration: none;
+}

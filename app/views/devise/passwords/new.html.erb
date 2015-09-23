@@ -1,0 +1,22 @@
+<body class="background">
+<div class="container center-element" style="margin-top: 8%">
+<%= image_tag "Vendemia_Logo_W_L.png"%>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div>
+  <%= f.email_field :email, class: "input-field btn-block",style:"margin-bottom: 2%; margin-top: 20px; ", placeholder: "Email" %></div>
+    <div>
+
+ 
+    <div><%= f.submit "Reset My Password", class: "input-field btn-block"%></div>
+
+   <%- if controller_name != 'sessions' %>
+  <%= link_to "Log in", new_session_path(resource_name), class: "text-white position-left", style: "margin-bottom: 4%; padding: 5px;"  %><br />
+<% end -%>
+
+<% end %>
+
+</div>
+</body>

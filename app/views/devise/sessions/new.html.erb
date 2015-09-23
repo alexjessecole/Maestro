@@ -1,0 +1,30 @@
+<body class="background">
+<div class="container center-element" style="margin-top: 8%">
+<%= image_tag "Maestro_Logo_Large.png"%>
+
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+
+   <div>
+  <%= f.email_field :email, class: "input-field btn-block",style:"margin-bottom: 2%; margin-top: 20px; ", placeholder: "Email" %></div>
+    <div>
+
+ 
+     <div>
+   <%= f.password_field :password, class: "input-field btn-block", placeholder: "Password" %>
+<%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  <%= link_to "Forgot your password?", new_password_path(resource_name), class: "text-white position-left", style:"padding: 5px; margin-bottom: 4%;"  %><br />
+<% end -%>
+ </div>
+
+
+  <div><%= f.submit "Log In", class: "input-field btn-block"%></div>
+   <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= link_to "Sign up", new_registration_path(resource_name), class: "text-white position-left", style:"padding: 5px; margin-bottom: 4%;"  %>
+<% end -%>
+
+<% end %>
+</div>
+</body>
+

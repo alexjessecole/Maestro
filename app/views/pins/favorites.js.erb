@@ -1,0 +1,9 @@
+$('#pins').append('<%= j render(@pins) %>').imagesLoaded( function(){
+  $('#pins').masonry( 'reload');
+});
+<% if @pins.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate(@pins) %>');
+<% else %>
+  $('.pagination').remove();
+<% end %>
+<%sleep 1%>

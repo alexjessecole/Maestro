@@ -1,0 +1,29 @@
+<body class="background">
+<div class="container center-element" style="margin-top: 8%">
+<%= form_for @pin, html: {multipart: true} do |f| %>
+  <% if @pin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this pin from being saved:</h2>
+
+      <ul>
+      <% @pin.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :description, " Description (Optional)" %>
+    <%= f.text_field :description, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Upload", class: "landing-button btn-block" %>
+  </div>
+<% end %>
+</div>

@@ -1,0 +1,115 @@
+*{   -webkit-tap-highlight-color: rgba(222,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+.top-animate {
+    background: #fff !important;
+    top: 13px !important;
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.mid-animate {
+    opacity: 0;
+}
+.bottom-animate {
+    background: #fff !important;
+    top: 13px !important;
+    -webkit-transform: rotate(-225deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-225deg);
+}
+.top-menu {
+    top: 5px;
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #F9A530;
+}
+.mid-menu {
+    top: 13px;
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #F9A530;
+}
+.bottom-menu {
+    top: 21px;
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #F9A530;
+}
+.menui {
+    background: #fff;
+    transition: 0.6s ease;
+    transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+    margin-top: 9px;
+    position: absolute;
+}
+
+.icon:hover {
+    background-color: transparent;
+   
+} 
+.icon {
+    z-index: 999;
+    position: fixed;
+    display: block;
+    padding: 9px;
+    height: 32px;
+    width:32px;
+    margin: 0px;
+    top: 0;
+    left: 0;
+}
+
+.mobilenav {
+    font-family: inherit;
+    top: 0;
+    left:0;
+    z-index: 100 !important;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #26A65B;
+}
+
+.mobilenav li {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10%; 
+    margin-top: 20%;
+}
+.mobilenav li a {
+    font-size: 150%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    width: 100%;
+}
+.mobilenav li:first-child {
+    margin-top: 60px;
+    margin-bottom: 10%;
+}
+
+.link-text{
+    color: #fff !important;
+    font-family: arial !important;
+    text-decoration: none !important;
+    font-size: 12px !important;
+    background-color: transparent;
+}
+
+.link-text:hover{
+    background-color: transparent;
+}
+
+.glyph-white{
+      color: #fff;
+      font-size: 50px;
+      padding: 0px !important;
+      
+}

@@ -1,0 +1,7 @@
+NOTES:
+
+Known Defects:
+Guest Images Tab- Flash message for a vote brings you to top of the page, loosing your spot.
+Registration complete nav bar is present
+
+<span class="over-image-tally"><%= pin.get_likes.size%></span>

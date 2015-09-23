@@ -1,0 +1,33 @@
+<div style="margin-top: 20%;">
+<%= link_to raw('<span class="glyphicon glyphicon-arrow-left back-arrow"></span><span class="back-arrow-text">Back</span>'), pins_path, style: "margin-top: 25%; font-size:15px; "%>
+</div>
+<div class="container">
+<%= form_for @pin, html: {multipart: true} do |f| %>
+  <% if @pin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this pin from being saved:</h2>
+
+      <ul>
+      <% @pin.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="form-group new-post-form-text" style="margin-top: 15%;">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: "form-control new-post-input-field" %>
+  </div>
+
+  <div class="form-group new-post-form-text" style="margin-bottom: 5%;">
+    <%= f.label :description%>
+    <span style="color: #000;">(Optional)</span>
+    <%= f.text_field :description, class: "form-control new-post-input-field" %>
+  </div>
+
+    <%= f.submit "Upload", class: "landing-button btn-block"%>
+
+<% end %>
+</div>
+

@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+		<div id="pins" style="margin-top: 40px;">
+		  <%= render @pins %>
+		</div>
+		<%=will_paginate(@pins) %>
+	
+
+		<div class="scroll-to-top">
+			<a href="#" class="scrollToTop"><span style="background-color:transparent;" class="glyphicon glyphicon-menu-up"><br/>Top</span></a>
+		</div>
+<%else%>
+	<%= render 'pages/landing' %>
+<%end%>

@@ -1,0 +1,27 @@
+<body class="background">
+<div class="container center-element" style="margin-top: 8%">
+<%= image_tag "Maestro_Logo_Large.png"%>
+
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+  <div>
+  <%= f.email_field :email, class: "input-field btn-block",style:"padding: 5px; margin-bottom: 2%; margin-top: 20px; ", placeholder: "Email" %></div>
+<div>
+   <%= f.text_field :displayname, class: "input-field btn-block",style:"padding: 5px; margin-bottom: 2%;", placeholder: "Display Name" %></div>
+     <div>
+   <%= f.password_field :password, class: "input-field btn-block",style:"padding: 5px; margin-bottom: 2%;", placeholder: "Password" %>
+ </div>
+
+  <div>
+  <%= f.password_field :password_confirmation, class: "input-field btn-block",style:"padding: 5px; margin-bottom: 4%;", placeholder: "Confirm Password" %></div>
+
+
+ 
+  <div><%= f.submit "Sign up", class: "input-field btn-block"%></div>
+<% end %>
+<%- if controller_name != 'sessions' %>
+  <%= link_to "Log in", new_session_path(resource_name), class: "text-white position-left", style: "margin-bottom: 4%; padding: 5px;"  %><br />
+<% end -%>
+</div>
+</body>

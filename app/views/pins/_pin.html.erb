@@ -1,0 +1,25 @@
+<div class="box">
+<div style="margin-top: 45px;">
+  <p class="pin-show-username">
+    <strong><%= pin.user.displayname %></strong>
+    <% if pin.description.length >= 50 %>
+          <span class="pin-show-description"><%= pin.description[0,50] + "..." %></span>  
+          <% else %>
+          <span class="pin-show-description"><%= pin.description %></span>  
+          <% end %>  
+
+
+        <% if current_user && pin.user == current_user %> 
+          <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <span class="glyphicon glyphicon-trash" style="float: right; margin-bottom: 1px; margin-right: 9px;"></span>
+          <% end %>
+        <% end %>
+  </p>
+  
+  <%= link_to raw('<span class="glyphicon over-image glyphicon-heart"></span>'), like_pin_path(pin), method: :put %> 
+  <%= link_to pin do %>
+    <image src="<%= pin.image %>" style="width: 100%; height: auto; margin-top: -30px;"></image>
+  <% end %>
+</div>
+</div>
+
