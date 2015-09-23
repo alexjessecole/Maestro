@@ -1,17 +1,17 @@
-# MediaHarbor
+# Maestro
 CS497 Personal Project
 
 ## 1 Project Proposal
 
 **(a) Project title?** For example: “Search Engine using Apache Lucene”, or “High- Performance Web Framework using Dart”.
  		
-		 Media Harbor: An Online Media Storage Platform Built with Ruby on Rails
+		 Maestro: An Online Media Storage Platform Built with Ruby on Rails
 		 
 **(b) What is it going to do?** For example: “Trans-compile a style sheet into mobile- friendly equivalent”, 
     “a chat client that uses Node.js to facilitate communication between several instant message protocols”, 
     “an HTTP proxy designed to make web browsing more anonymous”, etc. Be detailed and specific. 	
 		
-		Media Harbor is a subscription based web application allowing users to store, manage, and stream their digital media.
+		Maestro is a subscription based web application allowing users to store, manage, and stream their digital media.
 		
 **(c) Who is the target audience?** For example: The general public, developers, co-workers, research scientists, students, etc.
 		
@@ -31,7 +31,7 @@ CS497 Personal Project
 	Ext JS, and Concise” or “Facebook’s React framework with MySQL.” This may take a bit of research to figure out what will be a
 	good fit for your application.
 	
-		Media Harbor will be built using the Ruby on Rails framework. It will be hosted using the cedar stack on Heroku and will
+		Maestro will be built using the Ruby on Rails framework. It will be hosted using the cedar stack on Heroku and will
 		store user data in a backend postgres database. Payment processing will be accomplished using Stripe. Domain services will
 		be provided by dns simple.
 
