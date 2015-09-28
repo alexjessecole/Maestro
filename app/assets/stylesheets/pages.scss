@@ -6,7 +6,7 @@
 **                        Rails Links                                **
 **********************************************************************/
 a {
-color: #26A65B !important;	/*A links or ruby link_to*/
+color: #30a2e4 !important;	/*A links or ruby link_to*/
 }
 
 a:hover {
@@ -21,6 +21,10 @@ text-decoration: none;
 }
 
 .landing-button {
+  width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   -webkit-appearance: none;
   -webkit-box-shadow: 2px 2px 5px #888888; 
   -moz-box-shadow: 2px 2px 5px #888888;
