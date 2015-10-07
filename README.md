@@ -1,4 +1,5 @@
-# Maestro mymaestro.herokuapp.com
+# Maestro 
+# mymaestro.herokuapp.com
 
 To register:
 
@@ -9,9 +10,7 @@ To register:
 			CSV: 123
 
 
-CS497 Personal Project
-
-## Project URL mymaestro.herokuapp.com
+# CS497 Personal Project
 
 ## 1 Project Proposal
 
