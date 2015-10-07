@@ -1,11 +1,12 @@
 # Maestro mymaestro.herokuapp.com
 
 To register:
-1. Create account according to the guided registration process
-2. When it asks for payment info use the following test account:
-	Card #: 4242 4242 4242 4242
-	Exp: 10/2020
-	CSV: 123
+
+		1. Create account according to the guided registration process
+		2. When it asks for payment info use the following test account:
+			Card #: 4242 4242 4242 4242
+			Exp: 10/2020
+			CSV: 123
 
 
 CS497 Personal Project
