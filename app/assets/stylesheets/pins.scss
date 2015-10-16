@@ -1,104 +1,40 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 #pins {
-	margin: 0 auto;
+  color: #FE2E2E;
+  margin: 0 auto;
+  border-radius: 5px !important;
 }
 
-.box {
-width: 100%;
+.box{
+margin: 5px;
 }
 
-hr {
-  margin-top: 0px;
-  padding: 0;
-  border: none;
-  border-top: 9px solid #F7CA18;
-  color: #F7CA18;
-  text-align: center;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 2px 2px 5px #888888; 
-  -moz-box-shadow: 2px 2px 5px #888888;
-  box-shadow: 2px 2px 5px #888888;
+.box img {
+  object-fit: cover;
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 5px;
 }
 
-hr.gray-shadow {
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+@media only screen and (max-device-width: 480px) {
+#pins {
+  margin: 0;
+  border-radius: 0px !important;
 }
 
-.pin-show-username {
-  padding-left: 10px;
-  padding-bottom: 5px;
-  color: #F7CA18;
-  margin-bottom: 0px;
-}
-
-.pin-show-description {
-  margin-top: -10px; 
-  padding-left: 20px;
-  margin-bottom: 20px;
-  color: #000;
-}
-
-.current-user-links {
-  margin-top: 5px; 
-  padding-left: 10px;
-}
-
-.pin-image {
+.box img {
   width: 100%;
-  height: auto;
+  background-color: black;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
 }
 
-.over-image
-{
-    position:relative;
-    top: 10px;
-    right:5px;
-    text-align:right;
-    display:block;
-    font-size: 25px;
-    color: #F7CA18;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
+.box{
+  //border: 0px solid black;
+  border: 0px solid #FF9400;
+  border-radius: 5px !important;
+  margin: 7px;
+  width: 149px;
+  background-color: black;
 }
 
-.over-image-tally
-{
-    position:relative;
-    top: -40px;
-    right:25px;
-    text-align:right;
-    display:block;
-    font-size: 50px;
-}
-
-.new-post-input-field {
-  border: solid 1px #F7CA18;
-  color: #F7CA18;
-}
-
-.new-post-form-text{
-  color: #F7CA18;
-  text-decoration: none !important;
-  font-family: arial;
-}
-
-.back-arrow {
-  color: #F7CA18;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
-  font-size: 40px;
-  position: absolute;
-  top: 70px;
-  left: 10px;
-}
-
-.back-arrow-text {
-   position: absolute;
-  top: 81px;
-  left: 52px;
 }

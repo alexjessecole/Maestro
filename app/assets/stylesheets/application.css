@@ -18,8 +18,7 @@
 
 .flash {
 	color: #F7CA18;
-    margin-top: 45px;
- 	margin-bottom: 18px;
+    margin-top: 0px;
 	border: solid 3px #FFF;
 	background-color: #FFF !important;
     -webkit-appearance: none;
@@ -29,7 +28,20 @@
     width: 100% !important;
     font-size: 17px;
     text-align: center;
-   
+}
+
+.flash-logged-in {
+    color: #F7CA18;
+    margin-top: 50px;
+    border: solid 3px #FFF;
+    background-color: #FFF !important;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 2px 2px 5px #888888; 
+    -moz-box-shadow: 2px 2px 5px #888888;
+    box-shadow: 2px 2px 5px #888888;
+    width: 100% !important;
+    font-size: 17px;
+    text-align: center;
 }
 /* Haeder Nav Bar Styling*/
 
@@ -51,7 +63,7 @@
 
 .header-container{
     z-index: 150;
-    height: 45px;
+    height: 40px;
     position: fixed;
     top:0;
     width: 100%;

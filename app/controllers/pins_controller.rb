@@ -8,22 +8,8 @@ class PinsController < ApplicationController
 
 
 
-def index
-    @pins = Pin.order("created_at desc").page(params[:page]).per_page(6)
-     respond_to do |format|
-        format.html
-        format.js
-    end
- end
-
- def favorites
-       @pins = Pin.order("created_at desc").page(params[:page]).per_page(6)
-        @pins = Pin.all.sort_by{|pin|-pin.get_likes.size}.paginate(:page => params[:page], :per_page => 6)
-    
-     respond_to do |format|
-        format.html
-        format.js
-    end
+  def index
+   @pins = Pin.all.sort_by{|pin|-pin.likes.size}.paginate(:page => params[:page], :per_page => 20)
  end
 
   def show
@@ -40,7 +26,7 @@ def create
   @pin = Pin.new(pin_params)
   @pin.user_id = current_user.id
    if @pin.save
-      redirect_to @pin, notice: 'Image was successfully uploaded.'
+      redirect_to controller: 'users', action: 'photos', notice: 'Image was successfully uploaded.'
     
     else
       render action: 'new'

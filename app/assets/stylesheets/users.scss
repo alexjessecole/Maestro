@@ -2,6 +2,80 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// blue #30a2e4
+
+// Vertical Menu Bar BEGIN
+.left {
+  position:fixed; // keep fixed to window
+  padding: 10px;
+  top: 0; left: 0; 
+  height:100%; width:50px; //set dimensions
+  background: gray;
+  transition: width ease .5s; // fluid transition when resizing
+
+  body.open-nav & {
+    width:250px; 
+  }
+  
+  ul {
+    list-style:none;
+    margin:0; padding:0;
+    
+    li {
+      margin-bottom:25px;
+    }
+  }
+}
+
+.vertical-nav-glyph {
+  font-size: 30px;
+}
+
+// Vertical Menu Bar END
+
+// Vertical Menu Bar BEGIN
+.top {
+  z-index: 999;
+  position:fixed; // keep fixed to window
+  padding: 10px;
+  top: 0; left: 0; 
+  height:50px; width:100%; //set dimensions
+  background: #4c4c4c;
+  transition: width ease .5s; // fluid transition when resizing
+
+  body.open-nav & {
+    width:250px; 
+  }
+
+  a {
+color: #F7CA18 !important;  /*A links or ruby link_to*/
+}
+
+a:hover {
+color: #CCC !important; /*A links or ruby link_to*/
+text-decoration: none;
+}
+  
+  ul {
+    list-style:none;
+    margin:0; padding:0;
+    
+    li {
+      float: right;
+      display: inline;
+      margin-left: 20px;
+    }
+  }
+}
+
+.vertical-nav-glyph {
+  font-size: 30px;
+}
+
+// Vertical Menu Bar END
+
+
+
 .modal-dialog {
       width: 100%;
       height: 100%;

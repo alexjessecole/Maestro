@@ -8,4 +8,8 @@ class UsersController < ApplicationController
   	def current_user_home
   		redirect_to current_user
 	end
+
+	def photos
+		@photos = "photos"
+	end
 end

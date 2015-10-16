@@ -12,6 +12,7 @@ end
   get 'pages/about'
   get 'pages/landing'
   get 'pages/favorites'
+  get 'users/photos'
 
 end
   # The priority is based upon order of creation: first created -> highest priority.
@@ -20,7 +21,7 @@ end
   # You can have the root of your site routed with "root"
   
 authenticated do
-  root :to => 'users#current_user_home', as: :authenticated
+  root :to => 'users#photos', as: :authenticated
 end
 
 root :to => 'pages#_landing'

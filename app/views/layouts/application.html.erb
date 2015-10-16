@@ -20,11 +20,15 @@
 
 
 
-
+<% if user_signed_in? %>
+<% flash.each do |key, value| %>
+  <%= content_tag :div, value,:class => "flash #{key} flash-logged-in" unless value.blank? %>
+<% end %>
+<%else%>
 <% flash.each do |key, value| %>
   <%= content_tag :div, value,:class => "flash #{key} flash" unless value.blank? %>
 <% end %>
-
+<%end%>
      
           <%= yield %>
      
