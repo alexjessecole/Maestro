@@ -3,11 +3,11 @@ Oct 08, what new functionality or technical hurdle will you have complete?
 		1. "Landing" page fully functional and styled.
 		2. "Sign Up" and "Login" pages fully functional and styled.
 		3. Brand established including url, logo, and banner.
-		4. Account creation/access assisted using omniauth: facebook credentials.
+		4. Integrate subsciption plan activation process into the account creation process (Stripe Processing).
 		
 Oct 22, what new functionality or technical hurdle will you have complete?
 
-		1. Integrate subsciption plan activation process into the account creation process (Stripe Processing).
+		1. Facebook assisted login.
 		2. "Account Management" page implemented with ability alter subscription plan.
 		
 Nov 12, what new functionality or technical hurdle will you have complete?
