@@ -14,10 +14,11 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'wicked', '~> 1.1.0'
 gem 'will_paginate'
-gem 'paperclip', '~> 3.0'
+gem 'paperclip', '~> 4.3.1'
 gem 'aws-sdk', '< 2.0'
 gem 'masonry-rails'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 
 
 
