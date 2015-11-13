@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'songs/index'
+
+  get 'songs/upload'
+
+  get 'songs/delete'
+
   resources :pins do
   member do
     put "like", to: "pins#upvote"
@@ -15,6 +21,10 @@ end
   get 'users/photos'
 
 end
+
+get "songs/upload", :as => "upload"
+get "songs/delete", :as => "delete"
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

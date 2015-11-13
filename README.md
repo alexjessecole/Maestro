@@ -1,6 +1,9 @@
 # Maestro 
 # mymaestro.herokuapp.com
 
+Checkpoint 3
+**Still working towards functional video/audio Uploads
+
 To register:
 
 		1. Create account according to the guided registration process

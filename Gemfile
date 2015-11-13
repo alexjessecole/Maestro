@@ -17,6 +17,7 @@ gem 'will_paginate'
 gem 'paperclip', '~> 4.3.1'
 gem 'aws-sdk', '< 2.0'
 gem 'masonry-rails'
+gem 'carrierwave'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 
