@@ -12,4 +12,8 @@ class UsersController < ApplicationController
 	def photos
 		@photos = "photos"
 	end
+
+	def songs
+		@songs = current_user.songs.sort_by {|x| [x.artist, x.album] }
+	end
 end

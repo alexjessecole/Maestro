@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151016203339) do
+ActiveRecord::Schema.define(version: 20151205054824) do
 
   create_table "pins", force: :cascade do |t|
     t.string   "description"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 20151016203339) do
   end
 
   add_index "pins", ["user_id"], name: "index_pins_on_user_id"
+
+  create_table "songs", force: :cascade do |t|
+    t.string   "artist"
+    t.string   "album"
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  add_index "songs", ["user_id"], name: "index_songs_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

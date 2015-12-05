@@ -18,6 +18,9 @@
     <% if params[:action] == 'photos' %>
       <li data-no-turbolink><%= link_to raw('<span title="Upload Media" class="glyphicon glyphicon-plus vertical-nav-glyph"></span> <br/>'),new_pin_path, class: "link-text"%></li> 
     <%end%>
+      <% if params[:action] == 'songs' %>
+      <li data-no-turbolink><%= link_to raw('<span title="Upload Media" class="glyphicon glyphicon-plus vertical-nav-glyph"></span> <br/>'),new_song_path, class: "link-text"%></li> 
+    <%end%>
 </ul>     
 </nav>
     <a href="javascript:void(0)" class="icon"> 

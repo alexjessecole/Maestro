@@ -1,0 +1,60 @@
+<% if user_signed_in? %>
+<%= render '/layouts/header' %>
+<%= render 'users/layout' %>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body class="background">
+
+
+<div class="sub-header">
+		<%if current_user.songs.count == 1 %>
+		<p class="collection-count"><%=current_user.songs.count %> Song</p>
+	<%else%>
+<p class="collection-count"><%=current_user.songs.count %> Songs</p>
+		<%end%>
+</div>
+	<div class="photos-collection-container">
+		<div id="pins">
+		<%if current_user.songs.count == 0 %>
+			<%= render 'users/welcome' %>
+		<%else%>
+		  <div class="table-responsive" style="margin-top: -10px; padding-top: 8px !important;">          
+  <table class="table" >
+			  <thead>
+			    <tr>
+			      <th>Artist</th>
+			      <th>Album</th>
+			      <th>Title</th>
+			    </tr>
+			  </thead>
+
+
+			  <tbody>
+			    <% @songs.each do |song| %>
+			      <tr>
+			        <td><%= song.artist %></td>
+			        <td><%= song.album %></td>
+			        <td><%= song.title %></td>
+			      </tr>
+			    <% end %>
+			  </tbody>
+			</table>
+</div>
+
+
+
+		<%end%>
+		</div>
+	</div>
+
+
+</body>
+
+
+<%else%>
+	<%= render 'pages/landing' %>
+<%end%>

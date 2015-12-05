@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :songs
+
   get 'songs/index'
 
   get 'songs/upload'
@@ -19,6 +21,7 @@ end
   get 'pages/landing'
   get 'pages/favorites'
   get 'users/photos'
+  get 'users/songs'
 
 end
 
