@@ -1,0 +1,30 @@
+<% if user_signed_in? %>
+<%= render '/layouts/header' %>
+<%= render 'users/layout' %>
+
+</head>
+
+<body class="background-grey">
+
+
+<div class="sub-header">
+		<%if current_user.movies.count == 0 %>
+	<%else%>
+<p class="collection-count"><%=current_user.movies.count %> Photos</p>
+		<%end%>
+</div>
+	<div class="photos-collection-container">
+		<div id="pins">
+		<%if current_user.movies.count == 0 %>
+			<%= render 'users/welcome' %>
+		<%else%>
+			<%= render current_user.movies %>
+		<%end%>
+		</div>
+	</div>
+
+
+</body>
+<%else%>
+	<%= render 'pages/landing' %>
+<%end%>

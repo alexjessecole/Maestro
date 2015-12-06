@@ -6,4 +6,6 @@ class User < ActiveRecord::Base
 
   has_many :pins, dependent: :destroy
   has_many :songs, dependent: :destroy
+  has_many :movies, dependent: :destroy
+
 end

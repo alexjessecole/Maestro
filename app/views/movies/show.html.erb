@@ -1,19 +1,18 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html> 
+<html> 
+<body class="background">
 
-<p>
-  <strong>Title:</strong>
-  <%= @movie.title %>
-</p>
+<div class="container center-element" style="margin-top: 50px;">
 
-<p>
-  <strong>Rating:</strong>
-  <%= @movie.rating %>
-</p>
+<video width="400" controls>
+  <source src="<%=@movie.video%>" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div style="margin-top: 10px;">
+<%= link_to raw('<span class="back-arrow-text text-white position-left">Back</span>'), {:controller => 'users', :action => 'movies'}, style: "margin-top: 25%; font-size:15px; "%>
+</div>
 
-<p>
-  <strong>Year:</strong>
-  <%= @movie.year %>
-</p>
+</div>
+</body> 
+</html>
 
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %>

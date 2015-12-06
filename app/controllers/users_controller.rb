@@ -16,4 +16,8 @@ class UsersController < ApplicationController
 	def songs
 		@songs = current_user.songs.sort_by {|x| [x.artist, x.album] }
 	end
+
+	def movies
+		@movies = "movies"
+	end
 end

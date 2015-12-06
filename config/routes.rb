@@ -24,6 +24,7 @@ end
   get 'pages/favorites'
   get 'users/photos'
   get 'users/songs'
+  get 'users/movies'
 
 end
 
