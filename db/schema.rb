@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151205054824) do
+ActiveRecord::Schema.define(version: 20151205082656) do
 
   create_table "pins", force: :cascade do |t|
     t.string   "description"
@@ -30,9 +30,13 @@ ActiveRecord::Schema.define(version: 20151205054824) do
     t.string   "artist"
     t.string   "album"
     t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
     t.integer  "user_id"
+    t.string   "song_file_name"
+    t.string   "song_content_type"
+    t.integer  "song_file_size"
+    t.datetime "song_updated_at"
   end
 
   add_index "songs", ["user_id"], name: "index_songs_on_user_id"

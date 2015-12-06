@@ -15,16 +15,15 @@ text-decoration: none;
 }
 
 
+.background-grey {
+    background-color: #ccc ;
+}
 
 .background {
-	background-color: #5;
+  background-color: #30A2E4 !important;
 }
 
 .landing-button {
-  width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   -webkit-appearance: none;
   -webkit-box-shadow: 2px 2px 5px #888888; 
   -moz-box-shadow: 2px 2px 5px #888888;
@@ -34,12 +33,12 @@ text-decoration: none;
   border: solid 3px #FFF;
   border-radius: 6px;
   background-color: #FFF !important;
-  color: #F7CA18;
+  color: #FF494D;
   font-size: 19px;
   text-decoration: none;
 }
 
   .landing-button:hover {
     color: #ccc !important; /*A links or ruby link_to*/
-text-decoration: none;
+    text-decoration: none;
   }

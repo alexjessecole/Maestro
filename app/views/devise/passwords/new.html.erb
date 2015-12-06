@@ -1,6 +1,6 @@
 <body class="background">
-<div class="form-container center-element" style="margin-top: 8%">
-<%= image_tag "Maestro_Logo_Large.png"%>
+<div class="container center-element" style="margin-top: 8%">
+<%= image_tag "maestrologo.png"%>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>

@@ -23,3 +23,11 @@ $(function() {
       $(this).delay(2500).fadeOut('slow');
    });
 });
+
+
+$(function() {
+   $('.playTune').play()
+});
+
+
+
