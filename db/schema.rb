@@ -11,7 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151205082656) do
+ActiveRecord::Schema.define(version: 20151206042613) do
+
+  create_table "movies", force: :cascade do |t|
+    t.string   "title"
+    t.string   "rating"
+    t.string   "year"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.integer  "user_id"
+    t.string   "film_file_name"
+    t.string   "film_content_type"
+    t.integer  "film_file_size"
+    t.datetime "film_updated_at"
+    t.string   "poster_file_name"
+    t.string   "poster_content_type"
+    t.integer  "poster_file_size"
+    t.datetime "poster_updated_at"
+  end
+
+  add_index "movies", ["user_id"], name: "index_movies_on_user_id"
 
   create_table "pins", force: :cascade do |t|
     t.string   "description"
