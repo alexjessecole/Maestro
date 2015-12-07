@@ -24,10 +24,3 @@ $(function() {
    });
 });
 
-
-$(function() {
-   $('.playTune').play()
-});
-
-
-
