@@ -34,13 +34,14 @@
     <%= f.file_field :poster, class: "form-control new-post-input-field" %>
   </div>
 
-   </div>
+   <div>
     <%= f.label :video %>
     <%= f.file_field :video, class: "form-control new-post-input-field" %>
   </div>
 
+<div>
     <%= f.submit "Upload", class: "landing-button btn-block", style: "margin-top: 35px;"%>
-
+</div>
 <% end %>
 <div style="margin-top: 10px;">
 <%= link_to raw('<span class="glyphicon glyphicon-arrow-left back-arrow"></span><span class="back-arrow-text text-white position-left">Back</span>'), {:controller => 'users', :action => 'movies'}, style: "margin-top: 25%; font-size:15px; "%>
