@@ -20,4 +20,8 @@ class UsersController < ApplicationController
 	def movies
 		@movies = "movies"
 	end
+
+	def statistics
+
+	end
 end

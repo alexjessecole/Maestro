@@ -1,20 +1,21 @@
+<body class="background">
 <div style="margin-top: 60px;">
-  <p class="pin-show-username"><%= @pin.user.displayname %></p>
-  </br>
-  <p class="pin-show-description"><%= @pin.description %></p>
-
 	<image src="<%= @pin.image %>" style="width: 100%; height: auto;"></image>
 
 	<% if current_user && @pin.user == current_user %>
-          <div class="current-user-links">
+          <div style="color: #fff !important;">
             <%= link_to edit_pin_path(@pin) do %>
               <span class="glyphicon glyphicon-edit"></span>
               Edit
             <% end %>
             <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <span class="glyphicon glyphicon-trash"></span>
+              <span class="glyphicon glyphicon-trash text-white"></span>
               Delete
             <% end %>
+            <%= link_to raw('<span class="back-arrow-text text-white position-left">Back</span>'), {:controller => 'users', :action => 'photos'}, style: "margin-top: 25%; font-size:15px; "%>
+          </div>
           </div>
         <% end %>
+
 </div>
+</body>

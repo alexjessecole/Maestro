@@ -25,6 +25,7 @@ end
   get 'users/photos'
   get 'users/songs'
   get 'users/movies'
+  get 'users/statistics'
 
 end
 

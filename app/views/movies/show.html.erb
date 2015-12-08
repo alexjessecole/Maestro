@@ -1,14 +1,19 @@
 <!DOCTYPE html> 
 <html> 
-<body class="background">
+<body style="background-color: #000;">
 
 <div class="container center-element" style="margin-top: 50px;">
 
-<video width="400" controls>
+<video width="800" controls>
   <source src="<%=@movie.video%>" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-<div style="margin-top: 10px;">
+<div style="text-align: left; color: #fff; margin-top:50px;">
+	<H4><%=@movie.title%></H4>
+	<H4><%=@movie.year%></H4>
+	<H4><%=@movie.rating%></H4>
+</div>
+<div style="margin-top: 30px;">
 <%= link_to raw('<span class="back-arrow-text text-white position-left">Back</span>'), {:controller => 'users', :action => 'movies'}, style: "margin-top: 25%; font-size:15px; "%>
 </div>
 

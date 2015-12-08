@@ -7,12 +7,11 @@
       <li data-no-turbolink><%= link_to raw('<span class="glyphicon glyphicon-cog glyph-white"></span> <br/>Settings'),edit_user_registration_path, class: "link-text"%></li> 
     </div>
      <div class="col-xs-6">  
-      <li data-no-turbolink><%= link_to raw('<span class="glyphicon glyphicon-signal glyph-white"></span> <br/>Usage'),'#', class: "link-text"%></li> 
+      <li data-no-turbolink><%= link_to raw('<span class="glyphicon glyphicon-signal glyph-white"></span> <br/>Usage'),{:controller => 'users', :action => 'statistics'}, class: "link-text"%></li> 
     </div>
 </div> 
 
 
- 
 <nav class="top">
   <ul>
     <% if params[:action] == 'photos' %>
